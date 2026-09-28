@@ -1,14 +1,22 @@
 package org.example;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+
 public class Category {
     private int id; // Унікальний ідентифікатор категорії
     private String name; // Назва категорії
-    // Конструктор класу
-    public Category(int id, String name) {
-        this.id = id;
-        this.name = name;
     }
-    // Геттери та сеттери
+   /* // Геттери та сеттери
     public int getId() {
         return id;
     }
@@ -28,4 +36,4 @@ public class Category {
                 ", назва='" + name + '\'' +
                 '}';
     }
-}
+}*/
